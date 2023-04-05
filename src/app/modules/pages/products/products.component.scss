@@ -1,0 +1,63 @@
+// ===== Varaible ========== //
+$primary: #dd0c0c;
+$border-img: #aba8a8;
+$primary-medium: #11b111;
+$black: #000;
+$black-light: #0e0707;
+$white: #fff;
+$transition: all 0.3s ease-in-out;
+$box-shadow: 0 10px 10px 0 rgb(0 57 128 / 20%);
+$shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+// ======== Style products Component ============ //
+.products {
+  display: grid;
+  gap: 2rem;
+  &__content {
+    border: 1px solid $border-img;
+    box-shadow: $box-shadow;
+    position: relative;
+    overflow: hidden;
+  }
+  &__img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    transition: $transition;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+  &__body {
+    padding: 1rem 0 0.5rem 1rem;
+  }
+  &__body > h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $black;
+  }
+  &__body > p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $primary;
+    margin-bottom: 0.25rem;
+  }
+  &__body > span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $primary-medium;
+  }
+}
+
+// ====== Responsive Products =======
+@media screen and (min-width: 576px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,14 @@
+// ======== Import Scss varbial ==========
+@import "/src/app/modules/pages/products/products.component.scss";
+
+// =========== Style Table ========== //
+.table {
+  box-shadow: $shadow;
+}
+.table-caption {
+  text-align: center;
+  font-size: 2rem;
+  color: $black;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}

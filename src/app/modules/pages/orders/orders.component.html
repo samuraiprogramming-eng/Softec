@@ -1,0 +1,24 @@
+<!-- ==== Orders Page === -->
+<div class="table-responsive">
+    <!-- Table Orders Page   -->
+    <table class="table table-striped table-hover caption-top table-responsive-md table-bordered">
+        <caption class="table-caption">Orders</caption>
+        <thead class="table-danger">
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Date</th>
+                <th scope="col">User Id</th>
+                <th scope="col">PaymentType</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td>{{order.OrderId}}</td>
+                <td>{{order.OrderDate | date}}</td>
+                <td>{{order.UserId}}</td>
+                <td>{{order.PaymentType}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- end of Table Orders Page   -->
+</div>

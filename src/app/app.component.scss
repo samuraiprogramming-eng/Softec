@@ -1,0 +1,30 @@
+// ======== Import Scss varbial ==========
+@import "/src/app/modules/pages/products/products.component.scss";
+
+// ======== Style Navbar ======== //
+.main-header {
+  background-color: $black-light;
+  padding: 1rem;
+  box-shadow: $box-shadow;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  &__item {
+    padding: 0 1rem;
+  }
+}
+.link {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $white;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: $transition;
+  &:hover {
+    color: $white;
+    opacity: 1;
+  }
+}
